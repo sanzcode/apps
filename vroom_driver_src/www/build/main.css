@@ -25699,7 +25699,11 @@ li,
 
 .back-button,
 .text-white {
-  color: #fff;
+  color: #FFF;
+}
+
+.text-black {
+  color: #000000;
 }
 
 .text-theme {
@@ -26506,6 +26510,10 @@ page-earn .scroll-content {
 
 page-earn .text-white {
   color: #fff !important;
+}
+
+page-earn .text-black {
+  color: #000 !important;
 }
 
 page-filter .item-radio-checked ion-label {
