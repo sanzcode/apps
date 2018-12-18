@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "30842646016",
+    "firebase_url": "https://goublue-1540841326051.firebaseio.com",
+    "project_id": "goublue-1540841326051",
+    "storage_bucket": "goublue-1540841326051.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30842646016:android:7971a0f26e489327",
+        "android_client_info": {
+          "package_name": "com.goublue.vroom_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30842646016-dq5gjmmp5tjcv9non2lu34rlv7phpnah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM7YDynnlEMkFAMQyQ6DlgoIqXDcgM2B8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

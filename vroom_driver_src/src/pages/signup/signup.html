@@ -1,6 +1,6 @@
 <ion-header class="transparent">
     <ion-navbar>
-        <ion-title><span class="text-white">SIGN UP</span></ion-title>
+        <ion-title><span class="text-white">CREAR CUENTA</span></ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -14,41 +14,35 @@
     <div class="bg-white login">
         <div class="">
             <ion-row>
-                <ion-col class="click-img">
-                    <div class="form">
-                        <ion-icon name="camera"></ion-icon>
-                    </div>
-
-                </ion-col>
                 <ion-col class="name-fild">
                     <ion-list class="form" style="margin-bottom: 0">
                         <ion-item>
-                            <ion-label>First Name</ion-label>
-                            <ion-input type="text" value="Johans" text-right></ion-input>
+                            <ion-label>Nombre</ion-label>
+                            <ion-input type="text" text-right></ion-input>
                         </ion-item>
                         <ion-item>
-                            <ion-label>Last Name</ion-label>
-                            <ion-input type="text" value="Bittoda" text-right></ion-input>
+                            <ion-label>Apellidos</ion-label>
+                            <ion-input type="text" text-right></ion-input>
                         </ion-item>
                     </ion-list>
                 </ion-col>
             </ion-row>
             <ion-list class="form">
                 <ion-item>
-                    <ion-label>Creat Password</ion-label>
-                    <ion-input type="password" value="*******" text-right></ion-input>
+                    <ion-label>Contraseña</ion-label>
+                    <ion-input type="password" text-right></ion-input>
                 </ion-item>
                 <ion-item>
-                    <ion-label>Confirm Password</ion-label>
-                    <ion-input type="password" value="*******" text-right></ion-input>
+                    <ion-label>Repita la contraseña</ion-label>
+                    <ion-input type="password" text-right></ion-input>
                 </ion-item>
                 <ion-item>
-                    <ion-label>Phone Number</ion-label>
-                    <ion-input type="text" value="+91 9876543210" text-right></ion-input>
+                    <ion-label>Email</ion-label>
+                    <ion-input type="text" text-right></ion-input>
                 </ion-item>
             </ion-list>
-            <button ion-button full class="bg-theme text-white btn rounded" (click)="verification()">Sign up Now</button>
-            <p text-center>Already registered? <strong class="text-theme" (click)="login()">Sign in</strong></p>
+            <button ion-button full class="bg-theme text-white btn rounded" (click)="verification()">Crear una cuenta</button>
+            <p text-center>¿Tiene ya una cuenta? <strong class="text-theme" (click)="login()">Iniciar sesión</strong></p>
         </div>
     </div>
 </ion-content>
