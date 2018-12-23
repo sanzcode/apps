@@ -1,18 +1,18 @@
 <ion-header class="bg-theme">
     <ion-navbar>
-        <ion-title>PASSANGER PROFILE</ion-title>
+        <ion-title>PERFIL DE PASAJERO</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content class="bg-light">
     <ion-item style="position: relative;z-index: 2;">
         <ion-avatar item-start>
-            <img src="assets/imgs/man3.png">
+            <img src="assets/imgs/juan.png">
         </ion-avatar>
         <div class="name">
-            <h2>Manuel García
+            <h2>Juan Sanz
             </h2>
-            <p>Honda Civic | White</p>
+            <p>Usuario PREMIUM</p>
         </div>
         <div class="more">
             <h2>
@@ -22,13 +22,13 @@
                 <ion-icon name="ios-star"></ion-icon>
                 <ion-icon name="ios-star"></ion-icon>
             </h2>
-            <p>(53 Reviews)</p>
+            <p>(212 Reviews)</p>
         </div>
     </ion-item>
     <div class="tabs bg-white">
         <ion-segment [(ngModel)]="rideprofile">
             <ion-segment-button value="about">
-                About
+                Sobre
             </ion-segment-button>
             <ion-segment-button value="reviews">
                 Reviews
@@ -38,25 +38,25 @@
     <div [ngSwitch]="rideprofile">
         <ion-list *ngSwitchCase="'about'">
             <div class="bg-white about address">
-                <p class="text-theme heading">Address<span float-right>Edit</span></p>
+                <p class="text-theme heading">Dirección<span float-right>Editar</span></p>
                 <div class="ride-detail">
-                    <p><small>Home</small>
-                        <span class="icon-location bg-theme"></span>140 central Building near hdfc bank Washington sq.park New York</p>
+                    <p><small>Casa</small>
+                        <span class="icon-location bg-theme"></span>Paseo de la Florida, 22. Madrid</p>
                     <p>
-                        <small>Office</small>
-                        <span class="icon-location bg-yellow"></span>Harison, central Building near hdfc bank east sq.park New York</p>
+                        <small>Trabajo</small>
+                        <span class="icon-location bg-yellow"></span>Calle de Torres Quevedo, 17. Tres Cantos</p>
                 </div>
             </div>
             <div class="bg-white about info">
-                <p class="text-theme heading">Personal Info</p>
+                <p class="text-theme heading">Información personal</p>
                 <ion-list no-lines class="form-list">
                     <ion-item>
-                        <ion-label floating>Enail Address</ion-label>
-                        <ion-input type="text" value="david-johnson@gmail.com" readonly></ion-input>
+                        <ion-label floating>Dirección email</ion-label>
+                        <ion-input type="text" value="juansanz@gmail.com" readonly></ion-input>
                     </ion-item>
                     <ion-item>
-                        <ion-label floating>Profession</ion-label>
-                        <ion-input type="text" value="Senior Architech at Apx Designs" readonly></ion-input>
+                        <ion-label floating>Profesion</ion-label>
+                        <ion-input type="text" value="Modelo de manos" readonly></ion-input>
                     </ion-item>
                 </ion-list>
             </div>
@@ -73,30 +73,30 @@
                     <p>
                         <span class="text-1">4<ion-icon name="md-star"></ion-icon></span>
                         <span class="rate-bar"><span class="bg-theme" style="width: 90%"></span></span>
-                        <span class="text-2">90</span></p>
+                        <span class="text-2">70</span></p>
                     <p>
                         <span class="text-1">3<ion-icon name="md-star"></ion-icon></span>
                         <span class="rate-bar"><span class="bg-theme" style="width: 70%"></span></span>
-                        <span class="text-2">60</span>
+                        <span class="text-2">30</span>
                     </p>
                     <p>
                         <span class="text-1">2<ion-icon name="md-star"></ion-icon></span>
                         <span class="rate-bar"><span class="bg-theme" style="width: 50%"></span></span>
-                        <span class="text-2">40</span>
+                        <span class="text-2">20</span>
                     </p>
                     <p>
                         <span class="text-1">1<ion-icon name="md-star"></ion-icon></span>
                         <span class="rate-bar"><span class="bg-theme" style="width: 20%"></span></span>
-                        <span class="text-2">20</span>
+                        <span class="text-2">2</span>
                     </p>
                 </div>
             </div>
             <ion-card class="review">
                 <ion-item>
                     <ion-avatar item-start>
-                        <img src="assets/imgs/face-1.jpg">
+                        <img src="assets/imgs/aitor.png">
                     </ion-avatar>
-                    <h2>Buzz Lightyear</h2>
+                    <h2>Aitor Echevarria</h2>
                     <p>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
@@ -104,20 +104,20 @@
                         <ion-icon name="ios-star"></ion-icon>
                         <ion-icon name="ios-star"></ion-icon>
                     </p>
-                    <ion-note item-end>15 April 2017</ion-note>
+                    <ion-note item-end>15 Enero 2018</ion-note>
                 </ion-item>
                 <ion-card-content>
                     <div class="detail">
-                        <p>Badges are small components that typically communicate a numerical value to the user. They are typically used within an item.</p>
+                        <p>Juan es un chico muy simpático. Tuvimos una charla agradable durante todo el camino.</p>
                     </div>
                 </ion-card-content>
             </ion-card>
             <ion-card class="review">
                 <ion-item>
                     <ion-avatar item-start>
-                        <img src="assets/imgs/face-1.jpg">
+                        <img src="assets/imgs/alberto.jpg">
                     </ion-avatar>
-                    <h2>Buzz Lightyear</h2>
+                    <h2>Alberto Velázquez</h2>
                     <p>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
@@ -125,11 +125,11 @@
                         <ion-icon name="ios-star"></ion-icon>
                         <ion-icon name="ios-star"></ion-icon>
                     </p>
-                    <ion-note item-end>15 April 2017</ion-note>
+                    <ion-note item-end>03 Febrero 2018</ion-note>
                 </ion-item>
                 <ion-card-content>
                     <div class="detail">
-                        <p>Badges are small components that typically communicate a numerical value to the user. They are typically used within an item.</p>
+                        <p>100% recomendable. Repetiría sin duda.</p>
                     </div>
                 </ion-card-content>
             </ion-card>
@@ -137,10 +137,10 @@
     </div>
     <ion-row class="fix-btn">
         <ion-col>
-            <button class="btn rounded text-theme bg-white full" (click)="chatting()">MESSAGE</button>
+            <button class="btn rounded text-theme bg-white full" (click)="chatting()">MENSAJE</button>
         </ion-col>
         <ion-col>
-            <button class="btn rounded text-white bg-theme full" (click)="confirmpopup()">REQUEST RIDE</button>
+            <button class="btn rounded text-white bg-theme full" (click)="confirmpopup()">ACEPTAR PETICIÓN</button>
         </ion-col>
     </ion-row>
     <div class="space">&nbsp;</div>
