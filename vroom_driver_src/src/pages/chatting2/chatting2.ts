@@ -4,7 +4,7 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-chatting',
-  templateUrl: 'chatting.html'
+  templateUrl: 'chatting2.html'
 })
 export class ChattingPage {
 
