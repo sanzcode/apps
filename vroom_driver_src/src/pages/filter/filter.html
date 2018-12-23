@@ -1,51 +1,51 @@
 <ion-header class="bg-theme">
     <ion-navbar>
-        <ion-title>FILTER</ion-title>
+        <ion-title>FILTRO</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content class="bg-light">
-    <p class="text-light" padding>Shorting By</p>
+    <p class="text-light" padding>Filtrar por:</p>
     <ion-card>
         <ion-card-header>
             <ion-list radio-group>
                 <ion-item>
-                    <ion-label>Rating</ion-label>
+                    <ion-label>Puntuacion</ion-label>
                     <ion-radio checked="true" value="Rating"></ion-radio>
                 </ion-item>
                 <ion-item>
-                    <ion-label>Price</ion-label>
+                    <ion-label>Precio</ion-label>
                     <ion-radio value="Price"></ion-radio>
                 </ion-item>
             </ion-list>
         </ion-card-header>
     </ion-card>
-    <p class="text-light" padding>Price Range</p>
+    <p class="text-light" padding>Rango de precio</p>
     <ion-card>
         <ion-card-header>
             <ion-item>
                 <ion-range dualKnobs="true" [(ngModel)]="structure" color="success">
-                    <span range-left class="left-text">$ 40</span>
-                    <span range-right class="right-text">$ 70</span>
+                    <span range-left class="left-text">2,00 €</span>
+                    <span range-right class="right-text">4,00 €</span>
                 </ion-range>
             </ion-item>
         </ion-card-header>
     </ion-card>
-    <p class="text-light" padding>Availiblity</p>
+    <p class="text-light" padding>Disponibilidad</p>
     <ion-card>
         <ion-card-header>
             <ion-list>
                 <ion-item>
-                    <ion-label>Seat Available</ion-label>
+                    <ion-label>Plazas libre</ion-label>
                     <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                        <ion-option selected value="1">1 Seat</ion-option>
-                        <ion-option value="2">2 Seats</ion-option>
-                        <ion-option value="3">3 Seats</ion-option>
+                        <ion-option selected value="1">1 Plaza</ion-option>
+                        <ion-option value="2">2 Plazas</ion-option>
+                        <ion-option value="3">3 Plazas</ion-option>
                     </ion-select>
                 </ion-item>
                 <ion-item class="check-item">
                     <ion-checkbox></ion-checkbox>
-                    <ion-label>Air Conditioner</ion-label>
+                    <ion-label>Aire Acondicionado</ion-label>
                 </ion-item>
             </ion-list>
         </ion-card-header>
@@ -55,7 +55,7 @@
             <button class="btn rounded text-theme bg-white full">RESET</button>
         </ion-col>
         <ion-col>
-            <button class="btn rounded text-white bg-theme full">APPLY</button>
+            <button class="btn rounded text-white bg-theme full">APLICAR</button>
         </ion-col>
     </ion-row>
     <div class="space">&nbsp;</div>
