@@ -1,14 +1,14 @@
 <ion-header class="bg-theme">
     <ion-navbar>
-        <ion-title><span class="text-white">EDIT RIDE INFO</span></ion-title>
+        <ion-title><span class="text-white">PUBLICAR VIAJE</span></ion-title>
     </ion-navbar>
     <div padding-left padding-right>
         <ion-segment [(ngModel)]="ride">
             <ion-segment-button value="oneway">
-                One Way
+                Solo ida
             </ion-segment-button>
             <ion-segment-button value="Return">
-                Return
+                Ida y vuelta
             </ion-segment-button>
         </ion-segment>
     </div>
@@ -20,78 +20,78 @@
             <ion-card class="search search-1">
                 <span class="dot bg-theme"></span>
                 <ion-card-content>
-                    <ion-searchbar (ionInput)="getItems($event)" placeholder="Set Starting Location (Home)"></ion-searchbar>
-                    <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Starting time"></ion-searchbar>
+                    <ion-searchbar (ionInput)="getItems($event)" placeholder="Seleccionar origen"></ion-searchbar>
+                    <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Hora salida"></ion-searchbar>
                 </ion-card-content>
             </ion-card>
             <ion-card class="search search-2">
                 <span class="dot bg-yellow"></span>
                 <ion-card-content>
-                    <ion-searchbar (ionInput)="getItems($event)" placeholder="Set End Location (Office)"></ion-searchbar>
-                    <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Reaching time"></ion-searchbar>
+                    <ion-searchbar (ionInput)="getItems($event)" placeholder="Seleccionar destino"></ion-searchbar>
+                    <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Hora llegada"></ion-searchbar>
                 </ion-card-content>
             </ion-card>
-            <p class="text-theme">Select usually travel days</p>
+            <p class="text-theme">Selecciona el día</p>
             <br>
             <div class="days text-black">
                 <ion-row>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Monday</ion-label>
+                            <ion-label style="color:black">Lunes</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Tuesday</ion-label>
+                            <ion-label style="color:black">Martes</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Wednesday</ion-label>
+                            <ion-label style="color:black">Miércoles</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Thursday</ion-label>
+                            <ion-label style="color:black">Jueves</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Friday</ion-label>
+                            <ion-label style="color:black">Viernes</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Saturday</ion-label>
+                            <ion-label style="color:black">Sábado</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Sunday</ion-label>
+                            <ion-label style="color:black">Domingo</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                 </ion-row>
             </div>
             <br>
-            <p class="text-theme">Set Min. Fare ($)</p>
+            <p class="text-theme">Elige precio (€)</p>
             <div class="rate">
                 <ion-row>
                     <ion-col col-6>
                         <div class="seats-tag">
                             <ion-icon name="remove-circle"></ion-icon>
-                            <strong>60 $</strong>
+                            <strong>2,00 €</strong>
                             <ion-icon name="add-circle"></ion-icon>
                         </div>
                     </ion-col>
                     <ion-col col-6>
-                        <button (click)="tabs()" small class="btn rounded bg-theme text-white" style="width: 100%">Update Info</button>
+                        <button (click)="tabs()" small class="btn rounded bg-theme text-white" style="width: 100%">Publicar viaje</button>
                     </ion-col>
                 </ion-row>
             </div>
@@ -101,78 +101,78 @@
             <ion-card class="search search-1">
                 <span class="dot bg-yellow"></span>
                 <ion-card-content>
-                    <ion-searchbar (ionInput)="getItems($event)" placeholder="Set Starting Location (Office)"></ion-searchbar>
-                    <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Starting time"></ion-searchbar>
+                  <ion-searchbar (ionInput)="getItems($event)" placeholder="Seleccionar origen"></ion-searchbar>
+                  <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Hora salida"></ion-searchbar>
                 </ion-card-content>
             </ion-card>
             <ion-card class="search search-2">
                 <span class="dot bg-theme"></span>
                 <ion-card-content>
-                    <ion-searchbar (ionInput)="getItems($event)" placeholder="Set End Location (Home)"></ion-searchbar>
-                    <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Reaching time"></ion-searchbar>
+                  <ion-searchbar (ionInput)="getItems($event)" placeholder="Seleccionar destino"></ion-searchbar>
+                  <ion-searchbar class="nobdr" (ionInput)="getItems($event)" placeholder="Hora llegada"></ion-searchbar>
                 </ion-card-content>
             </ion-card>
-            <p class="text-theme">Select usually travel days</p>
+            <p class="text-theme">Selecciona el día</p>
             <br>
-            <div class="days text-white">
+            <div class="days text-black">
                 <ion-row>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Monday</ion-label>
+                            <ion-label style="color:black">Lunes</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Tuesday</ion-label>
+                            <ion-label style="color:black">Martes</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Wednesday</ion-label>
+                            <ion-label style="color:black">Miércoles</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Thursday</ion-label>
+                            <ion-label style="color:black">Jueves</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Friday</ion-label>
+                            <ion-label style="color:black">Viernes</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Saturday</ion-label>
+                            <ion-label style="color:black">Sábado</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                     <ion-col col-6>
                         <ion-item>
-                            <ion-label style="color:black">Sunday</ion-label>
+                            <ion-label style="color:black">Domingo</ion-label>
                             <ion-checkbox checked="true"></ion-checkbox>
                         </ion-item>
                     </ion-col>
                 </ion-row>
             </div>
             <br>
-            <p class="text-theme">Set Min. Fare (€)</p>
+            <p class="text-theme">Elige precio (€)</p>
             <div class="rate">
                 <ion-row>
                     <ion-col col-6>
                         <div class="seats-tag">
                             <ion-icon name="remove-circle"></ion-icon>
-                            <strong>60 $</strong>
+                            <strong>2,00 €</strong>
                             <ion-icon name="add-circle"></ion-icon>
                         </div>
                     </ion-col>
                     <ion-col col-6>
-                        <button (click)="tabs()" class="btn rounded bg-theme text-white" style="width: 100%" small>Update Info</button>
+                        <button (click)="tabs()" class="btn rounded bg-theme text-white" style="width: 100%" small>Publicar viaje</button>
                     </ion-col>
                 </ion-row>
             </div>
