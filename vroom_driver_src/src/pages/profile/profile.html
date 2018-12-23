@@ -1,18 +1,18 @@
 <ion-header class="bg-theme">
     <ion-navbar>
-        <ion-title>MY PROFILE</ion-title>
+        <ion-title>MI PERFIL</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content class="bg-light">
     <ion-item style="position: relative;z-index: 2;">
         <ion-avatar item-start>
-            <img src="assets/imgs/man3.png">
+            <img src="assets/imgs/jose.png">
         </ion-avatar>
         <div class="name">
-            <h2>Manuel García
+            <h2>Jose Gómez
             </h2>
-            <p>Edit Profile</p>
+            <p>Editar Perfil</p>
         </div>
         <div class="more">
             <h2>
@@ -28,7 +28,7 @@
     <div class="tabs bg-white">
         <ion-segment [(ngModel)]="myprofile">
             <ion-segment-button value="about">
-                About
+                Sobre
             </ion-segment-button>
             <ion-segment-button value="reviews">
                 Reviews
@@ -38,97 +38,97 @@
     <div [ngSwitch]="myprofile">
         <ion-list *ngSwitchCase="'about'">
             <div class="bg-white about address">
-                <p class="text-theme heading">Address<span float-right>Edit</span></p>
+                <p class="text-theme heading">Dirección<span float-right>Editar</span></p>
                 <div class="ride-detail">
-                    <p><small>Home</small>
-                        <span class="icon-location bg-theme"></span>140 central Building near hdfc bank Washington sq.park New York</p>
+                    <p><small>Casa</small>
+                        <span class="icon-location bg-theme"></span>Calle Santa Engracia, 23. Madrid</p>
                     <p>
-                        <small>Office</small>
-                        <span class="icon-location bg-yellow"></span>Harison, central Building near hdfc bank east sq.park New York</p>
+                        <small>Trabajo</small>
+                        <span class="icon-location bg-yellow"></span>Calle Severo Ochoa, 4. Tres Cantos</p>
                 </div>
             </div>
             <div class="bg-white about info">
-                <p class="text-theme heading">Personal Info<span float-right>Edit</span></p>
+                <p class="text-theme heading">Información personal<span float-right>Editar</span></p>
                 <ion-list no-lines class="form-list">
                     <ion-item>
-                        <ion-label floating>User Name</ion-label>
-                        <ion-input type="text" value="Johan Bitoda" readonly></ion-input>
+                        <ion-label floating>Usuario</ion-label>
+                        <ion-input type="text" value="JoeGoemz" readonly></ion-input>
                     </ion-item>
                 </ion-list>
             </div>
             <div class="bg-white about info">
-                <p class="text-theme heading">Verification<span float-right>Save</span></p>
+                <p class="text-theme heading">Verificacion<span float-right>Guardar</span></p>
                 <ion-list no-lines class="form-list">
                     <ion-item>
 
-                        <ion-label floating>Phone Verification</ion-label>
-                        <ion-input type="text" value="+91 964 148 6000" readonly></ion-input>
+                        <ion-label floating>Teléfono</ion-label>
+                        <ion-input type="text" value="+608 45 65 78" readonly></ion-input>
                     </ion-item>
                     <ion-item>
                         <ion-icon name="ios-checkmark-circle" class="text-theme check"></ion-icon>
-                        <ion-label floating>Email Verification</ion-label>
-                        <ion-input type="text" value="johanbittoda@email.com" readonly></ion-input>
+                        <ion-label floating>Email</ion-label>
+                        <ion-input type="text" value="josegomez@gmail.com" readonly></ion-input>
                     </ion-item>
                     <ion-item>
                         <ion-icon name="ios-checkmark-circle" class="text-theme check"></ion-icon>
-                        <ion-label floating>Goverment ID Verification</ion-label>
-                        <ion-input type="text" value="Senior Architechat Alex Designs." readonly></ion-input>
+                        <ion-label floating>Prefesión</ion-label>
+                        <ion-input type="text" value="Astronauta amateur" readonly></ion-input>
 
                     </ion-item>
                 </ion-list>
             </div>
             <div class="bg-white about info">
-                <p class="text-theme heading">Car Info<span float-right>Save</span></p>
+                <p class="text-theme heading">Información del coche<span float-right>Guardar</span></p>
                 <ion-list no-lines class="form-list">
                     <ion-row>
                         <ion-col col-6>
                             <ion-item>
-                                <ion-label floating>Car Brand</ion-label>
+                                <ion-label floating>Marca</ion-label>
                                 <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                                    <ion-option selected value="Honda">Honda</ion-option>
-                                    <ion-option value="Audi">Audi</ion-option>
+                                    <ion-option selected value="Seat">Audi</ion-option>
+                                    <ion-option value="Audi">Seat</ion-option>
                                     <ion-option value="BMW">BMW</ion-option>
                                 </ion-select>
                             </ion-item>
                         </ion-col>
                         <ion-col col-6>
                             <ion-item>
-                                <ion-label floating>Car Model</ion-label>
+                                <ion-label floating>Modelo</ion-label>
                                 <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                                    <ion-option selected value="Civik">Civik</ion-option>
-                                    <ion-option value="Luxary">Luxary</ion-option>
+                                    <ion-option selected value="Ibiza">Leon</ion-option>
+                                    <ion-option value="Luxary">Ateca</ion-option>
                                 </ion-select>
                             </ion-item>
                         </ion-col>
                         <ion-col col-6>
                             <ion-item>
-                                <ion-label floating>Seat for Passanger</ion-label>
+                                <ion-label floating>Plazas disponibles</ion-label>
                                 <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                                    <ion-option value="1">1 Seat</ion-option>
-                                    <ion-option value="2">2 Seats</ion-option>
-                                    <ion-option selected value="2">3 Seat</ion-option>
+                                    <ion-option value="1">1 Plaza</ion-option>
+                                    <ion-option value="2">2 Plazas</ion-option>
+                                    <ion-option selected value="2">3 Plazas</ion-option>
                                 </ion-select>
                             </ion-item>
                         </ion-col>
                         <ion-col col-6>
                             <ion-item>
-                                <ion-label floating>Air Conditioner availibility</ion-label>
+                                <ion-label floating>Aire acondicionado</ion-label>
                                 <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                                    <ion-option selected value="yes">AC Availible</ion-option>
-                                    <ion-option value="no">Not Availible</ion-option>
+                                    <ion-option selected value="yes">AC Disponible</ion-option>
+                                    <ion-option value="no">No Disponible</ion-option>
                                 </ion-select>
                             </ion-item>
                         </ion-col>
                         <ion-col col-6>
                             <ion-item>
-                                <ion-label floating>Car Number</ion-label>
-                                <ion-input type="text" value="D3 34 45D" readonly></ion-input>
+                                <ion-label floating>Matrícula</ion-label>
+                                <ion-input type="text" value="3456 GHR" readonly></ion-input>
                             </ion-item>
                         </ion-col>
                         <ion-col col-6>
                             <ion-item>
-                                <ion-label floating>Car Color</ion-label>
-                                <ion-input type="text" value="White" readonly></ion-input>
+                                <ion-label floating>Color</ion-label>
+                                <ion-input type="text" value="Azul" readonly></ion-input>
                             </ion-item>
                         </ion-col>
                     </ion-row>
@@ -140,27 +140,27 @@
                 <div class="rating-box">
                     <p>
                         <span class="text-1">5<ion-icon name="md-star"></ion-icon></span>
-                        <span class="rate-bar"><span class="bg-theme" style="width: 100%"></span></span>
-                        <span class="text-2">100</span>
+                        <span class="rate-bar"><span class="bg-theme" style="width: 90%"></span></span>
+                        <span class="text-2">35</span>
                     </p>
                     <p>
                         <span class="text-1">4<ion-icon name="md-star"></ion-icon></span>
-                        <span class="rate-bar"><span class="bg-theme" style="width: 90%"></span></span>
-                        <span class="text-2">90</span></p>
+                        <span class="rate-bar"><span class="bg-theme" style="width: 15%"></span></span>
+                        <span class="text-2">10</span></p>
                     <p>
                         <span class="text-1">3<ion-icon name="md-star"></ion-icon></span>
-                        <span class="rate-bar"><span class="bg-theme" style="width: 70%"></span></span>
-                        <span class="text-2">60</span>
+                        <span class="rate-bar"><span class="bg-theme" style="width: 10%"></span></span>
+                        <span class="text-2">5</span>
                     </p>
                     <p>
                         <span class="text-1">2<ion-icon name="md-star"></ion-icon></span>
-                        <span class="rate-bar"><span class="bg-theme" style="width: 50%"></span></span>
-                        <span class="text-2">40</span>
+                        <span class="rate-bar"><span class="bg-theme" style="width: 5%"></span></span>
+                        <span class="text-2">2</span>
                     </p>
                     <p>
                         <span class="text-1">1<ion-icon name="md-star"></ion-icon></span>
-                        <span class="rate-bar"><span class="bg-theme" style="width: 20%"></span></span>
-                        <span class="text-2">20</span>
+                        <span class="rate-bar"><span class="bg-theme" style="width: 5%"></span></span>
+                        <span class="text-2">1</span>
                     </p>
                 </div>
             </div>
@@ -169,40 +169,40 @@
                     <ion-avatar item-start>
                         <img src="assets/imgs/face-1.jpg">
                     </ion-avatar>
-                    <h2>Buzz Lightyear</h2>
+                    <h2>Maria Luisa</h2>
                     <p>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
-                        <ion-icon name="ios-star"></ion-icon>
-                        <ion-icon name="ios-star"></ion-icon>
+                        <ion-icon name="ios-star" class="text-yellow"></ion-icon>
+                        <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                     </p>
-                    <ion-note item-end>15 April 2017</ion-note>
+                    <ion-note item-end>10 Enero 2018</ion-note>
                 </ion-item>
                 <ion-card-content>
                     <div class="detail">
-                        <p>Badges are small components that typically communicate a numerical value to the user. They are typically used within an item.</p>
+                        <p>Un fiera del volante.</p>
                     </div>
                 </ion-card-content>
             </ion-card>
             <ion-card class="review">
                 <ion-item>
                     <ion-avatar item-start>
-                        <img src="assets/imgs/face-1.jpg">
+                        <img src="assets/imgs/aitor.png">
                     </ion-avatar>
-                    <h2>Buzz Lightyear</h2>
+                    <h2>Aitor Echevarria</h2>
                     <p>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                         <ion-icon name="ios-star" class="text-yellow"></ion-icon>
-                        <ion-icon name="ios-star"></ion-icon>
+                        <ion-icon name="ios-star" class="text-yellow"></ion-icon>
                         <ion-icon name="ios-star"></ion-icon>
                     </p>
-                    <ion-note item-end>15 April 2017</ion-note>
+                    <ion-note item-end>15 Febrero 2018</ion-note>
                 </ion-item>
                 <ion-card-content>
                     <div class="detail">
-                        <p>Badges are small components that typically communicate a numerical value to the user. They are typically used within an item.</p>
+                        <p>Charla agradable y buena música.</p>
                     </div>
                 </ion-card-content>
             </ion-card>
